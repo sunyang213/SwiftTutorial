@@ -9,10 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
+    @IBOutlet weak var firstCardImageView: UIImageView!
+    @IBOutlet weak var secondCardImageView: UIImageView!
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        println("load")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +31,18 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func playButtonClick(sender: UIButton) {
+        
+        var firstCard : Int32 = rand() % 13 + 1
+        var secondCard : Int32 = rand() % 13 + 1
+        
+        self.firstCardImageView.image = UIImage (named: "card" + String(firstCard))
+        self.secondCardImageView.image = UIImage(named: "card" + String(secondCard))
+        
+        // Add record into .plist file
+
+        
+        //data.writeToFile(path, atomically: true)
+    }
 }
 

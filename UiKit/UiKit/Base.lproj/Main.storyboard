@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UiKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ecN-h3-FME">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k78-xS-0Gi">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIv-Zd-3pg" userLabel="InputView">
+                                <rect key="frame" x="5" y="69" width="310" height="469"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsH-lO-hqq" userLabel="Brand Name">
+                                        <rect key="frame" x="5" y="5" width="300" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jct-Wh-J6V" userLabel="Batch Code">
+                                        <rect key="frame" x="5" y="55" width="300" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gs-cb-Hay">
+                                        <rect key="frame" x="68" y="105" width="174" height="136"/>
+                                        <state key="normal" image="CheckButton"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="CsH-lO-hqq" firstAttribute="leading" secondItem="LIv-Zd-3pg" secondAttribute="leading" constant="5" id="HIs-dv-wSd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jct-Wh-J6V" secondAttribute="trailing" constant="5" id="LoS-Uj-L0N"/>
+                                    <constraint firstAttribute="trailing" secondItem="CsH-lO-hqq" secondAttribute="trailing" constant="5" id="LxW-z6-Xpj"/>
+                                    <constraint firstItem="Jct-Wh-J6V" firstAttribute="top" secondItem="CsH-lO-hqq" secondAttribute="bottom" constant="20" id="Skw-Xg-Is2"/>
+                                    <constraint firstItem="CsH-lO-hqq" firstAttribute="top" secondItem="LIv-Zd-3pg" secondAttribute="top" constant="5" id="eex-2u-lW7"/>
+                                    <constraint firstItem="Jct-Wh-J6V" firstAttribute="leading" secondItem="LIv-Zd-3pg" secondAttribute="leading" constant="5" id="fI2-9Q-tr4"/>
+                                    <constraint firstItem="Jct-Wh-J6V" firstAttribute="width" secondItem="CsH-lO-hqq" secondAttribute="width" id="gXi-pR-kvN"/>
+                                    <constraint firstItem="8Gs-cb-Hay" firstAttribute="top" secondItem="Jct-Wh-J6V" secondAttribute="bottom" constant="20" id="gyR-4v-YE9"/>
+                                    <constraint firstAttribute="centerX" secondItem="8Gs-cb-Hay" secondAttribute="centerX" id="h1a-oL-Ncb"/>
+                                    <constraint firstItem="Jct-Wh-J6V" firstAttribute="height" secondItem="CsH-lO-hqq" secondAttribute="height" id="kGi-7g-ZWb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k78-xS-0Gi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="0is-bF-U5h"/>
+                            <constraint firstAttribute="trailing" secondItem="k78-xS-0Gi" secondAttribute="trailing" id="2nU-az-AWA"/>
+                            <constraint firstItem="k78-xS-0Gi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6gz-OU-xgG"/>
+                            <constraint firstAttribute="trailing" secondItem="ecN-h3-FME" secondAttribute="trailing" id="BHg-Fl-X3w"/>
+                            <constraint firstItem="LIv-Zd-3pg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="5" id="CCa-97-GgQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LIv-Zd-3pg" secondAttribute="bottom" constant="30" id="djQ-bP-iQ9"/>
+                            <constraint firstItem="ecN-h3-FME" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="etV-GG-129"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ecN-h3-FME" secondAttribute="bottom" id="hWj-HT-20U"/>
+                            <constraint firstAttribute="centerX" secondItem="k78-xS-0Gi" secondAttribute="centerX" id="u5E-ab-1Ra"/>
+                            <constraint firstItem="ecN-h3-FME" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="x7L-SK-As1"/>
+                            <constraint firstItem="LIv-Zd-3pg" firstAttribute="top" secondItem="k78-xS-0Gi" secondAttribute="bottom" constant="5" id="yAD-my-akL"/>
+                            <constraint firstAttribute="trailing" secondItem="LIv-Zd-3pg" secondAttribute="trailing" constant="5" id="zn5-sz-Q1L"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="182" height="341"/>
+        <image name="CheckButton" width="174" height="136"/>
+    </resources>
+</document>
